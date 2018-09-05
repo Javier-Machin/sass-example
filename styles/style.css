@@ -39,11 +39,21 @@ nav {
 .btn-main:link {
   background-color: #f08a5d; }
 
+.btn-main:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eee; }
+
 .btn-main:hover {
   background-color: #ea5717; }
 
 .btn-hot:link {
   background-color: #b83b5e; }
+
+.btn-hot:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eee; }
 
 .btn-hot:hover {
   background-color: #d16f8a; }
