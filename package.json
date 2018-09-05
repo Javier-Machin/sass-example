@@ -1,0 +1,22 @@
+{
+  "name": "sass-example",
+  "version": "1.0.0",
+  "description": "Small Sass example using SCSS format for Jonas Schmedtmann's advanced CSS and Sass course",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javier-Machin/sass-example.git"
+  },
+  "author": "Javier M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javier-Machin/sass-example/issues"
+  },
+  "homepage": "https://github.com/Javier-Machin/sass-example#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

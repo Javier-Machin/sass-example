@@ -3,11 +3,11 @@
   padding: 0;
 }
 
-$color-primary: #f9ed69; // yellow color
-$color-secondary: #f08a5d; // orange
-$color-tertiary: #b83b5e; // pink
-$color-text-dark: #333; // dark-grey
-$color-text-light: #eee; // light-grey
+$color-primary: #f9ed69; 
+$color-secondary: #f08a5d; 
+$color-tertiary: #b83b5e; 
+$color-text-dark: #333; 
+$color-text-light: #eee; 
 
 $width-button: 150px;
 
@@ -61,6 +61,7 @@ nav {
   float: right;
 }
 
+// Extend, only if elements you want to extend are related, otherwise use Mixin 
 %btn-placeholder {
   padding: 10px;
   display: inline-block;
@@ -70,13 +71,9 @@ nav {
   @include style-link-text($color-text-light);
 }
 
-.btn-main:link,
-.btn-hot:link {
-
-}
-
 .btn-main {
   &:link {
+    @extend %btn-placeholder;
     background-color: $color-secondary;  
   }
   
@@ -87,6 +84,7 @@ nav {
 
 .btn-hot {
   &:link {
+    @extend %btn-placeholder;
     background-color: $color-tertiary;  
   }
   
